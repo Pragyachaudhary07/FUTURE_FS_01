@@ -17,18 +17,39 @@
   <title>Pragya Chaudhary | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-     <header class="hero">
-  <h1>Hello, I'm <span>Pragya</span> </h1>
-  <p>Aspiring Full Stack Web Developer</p>
 
-  <a class="resume-btn" href="assets/Pragya_Chaudhary_Resume.pdf" download>
-    Download Resume
-  </a>
-    </header>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <h2 class="logo">Pragya</h2>
 
-    <section>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a class="resume-btn" href="assets/Pragya_Chaudhary_Resume.pdf" download>
+          Resume
+        </a>
+      </li>
+    </ul>
+
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <header class="hero">
+    <h1>Hello, I'm <span>Pragya</span> 👋</h1>
+    <p>Aspiring Full Stack Web Developer</p>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="container">
+
+    <section id="about" class="card">
       <h2>About Me</h2>
       <p>
         I am a B.Tech CSE student passionate about web development and
@@ -37,53 +58,74 @@
       </p>
     </section>
 
-    <section>
+    <section id="skills" class="card">
       <h2>Skills</h2>
-      <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React.js (Basics)</li>
+      <ul class="skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React (Basics)</li>
         <li>Git & GitHub</li>
       </ul>
     </section>
 
-    <section>
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+
+      <div class="projects">
+        <div class="project-card">
+          <img src="assets/portfolio.png" alt="Portfolio Project" />
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            Responsive portfolio built using HTML, CSS, and JavaScript and
+            deployed using GitHub Pages.
+          </p>
+          <a
+            href="https://pragyachaudhary07.github.io/FUTURE_FS_01/"
+            target="_blank"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="card">
       <h2>Achievements</h2>
       <ul>
         <li>Selected for Full Stack Web Development Internship at Future Interns</li>
-        <li>Completed multiple academic and personal web projects</li>
+        <li>Built and deployed a personal portfolio</li>
         <li>Strong foundation in Data Structures and Problem Solving</li>
       </ul>
     </section>
-    <section id="projects" class="card">
-  <h2>Projects</h2>
 
-  <div class="projects">
-    <div class="project-card">
-      <img src="assets/portfolio.png" alt="Portfolio Project" />
-      <h3>Personal Portfolio Website</h3>
+    <section id="contact" class="card contact">
+      <h2>Contact</h2>
       <p>
-        Responsive portfolio built using HTML, CSS, and JavaScript and
-        deployed using GitHub Pages.
+        Email:
+        <a href="mailto:chaudharykanishka21@gmail.com">
+          chaudharykanishka21@gmail.com
+        </a>
       </p>
-      <a href="https://pragyachaudhary07.github.io/FUTURE_FS_01/" target="_blank">
-        Live Demo
-      </a>
-    </div>
-  </div>
-</section>
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:chaudharykanishka21@gmail.com">chaudharykanishka21@gmail.com</a></p>
-  <p>
-    <a href="https://www.linkedin.com/in/pragya-chaudhary-6ba071289/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/Pragyachaudhary07" target="_blank">GitHub</a>
-  </p>
-</section>
+      <p class="links">
+        <a href="https://github.com/Pragyachaudhary07" target="_blank">GitHub</a>
+        |
+        <a
+          href="https://www.linkedin.com/in/pragya-chaudhary-6ba071289/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </p>
+    </section>
 
-    <footer>
-      <p>© 2025 Pragya Chaudhary</p>
-    </footer>
-  </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Pragya Chaudhary</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
+</html>
