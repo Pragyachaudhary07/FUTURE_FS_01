@@ -3,128 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO Meta Tags -->
-  <meta
-    name="description"
-    content="Pragya Chaudhary | Full Stack Web Developer Portfolio showcasing skills, projects, and achievements."
-  />
-  <meta
-    name="keywords"
-    content="Pragya Chaudhary, Portfolio, Web Developer, HTML, CSS, JavaScript"
-  />
-
   <title>Pragya Chaudhary | Portfolio</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <h2 class="logo">Pragya</h2>
+  <!-- Mobile menu button -->
+  <button class="menu-toggle" id="menuToggle">☰</button>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a class="resume-btn" href="assets/Pragya_Chaudhary_Resume.pdf" download>
-          Resume
-        </a>
-      </li>
-    </ul>
+  <div class="layout">
 
-    <button id="themeToggle">🌙</button>
-  </nav>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <h2 class="logo">Pragya</h2>
 
-  <!-- ===== HERO SECTION ===== -->
-  <header class="hero">
-    <h1>Hello, I'm <span>Pragya</span> 👋</h1>
-    <p>Aspiring Full Stack Web Developer</p>
-  </header>
-
-  <!-- ===== MAIN CONTENT ===== -->
-  <main class="container">
-
-    <section id="about" class="card">
-      <h2>About Me</h2>
-      <p>
-        I am a B.Tech CSE student passionate about web development and
-        problem-solving. I enjoy building clean and user-friendly web
-        applications.
-      </p>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React (Basics)</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="card">
-      <h2>Projects</h2>
-
-      <div class="projects">
-        <div class="project-card">
-          <img src="assets/portfolio.png" alt="Portfolio Project" />
-          <h3>Personal Portfolio Website</h3>
-          <p>
-            Responsive portfolio built using HTML, CSS, and JavaScript and
-            deployed using GitHub Pages.
-          </p>
-          <a
-            href="https://pragyachaudhary07.github.io/FUTURE_FS_01/"
-            target="_blank"
-          >
-            Live Demo
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="resume-btn" href="assets/Pragya_Chaudhary_Resume.pdf" download>
+            Resume
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="card">
-      <h2>Achievements</h2>
-      <ul>
-        <li>Selected for Full Stack Web Development Internship at Future Interns</li>
-        <li>Built and deployed a personal portfolio</li>
-        <li>Strong foundation in Data Structures and Problem Solving</li>
+        </li>
       </ul>
-    </section>
+    </aside>
 
-    <section id="contact" class="card contact">
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:chaudharykanishka21@gmail.com">
-          chaudharykanishka21@gmail.com
-        </a>
-      </p>
-      <p class="links">
-        <a href="https://github.com/Pragyachaudhary07" target="_blank">GitHub</a>
-        |
-        <a
-          href="https://www.linkedin.com/in/pragya-chaudhary-6ba071289/"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
-      </p>
-    </section>
+    <!-- Main content -->
+    <main class="content">
 
-  </main>
+      <header class="hero">
+        <h1>Hello, I'm Pragya 👋</h1>
+        <p>Aspiring Full Stack Web Developer</p>
+      </header>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 Pragya Chaudhary</p>
-  </footer>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a B.Tech CSE student passionate about web development and
+          problem-solving. I enjoy building clean and user-friendly web applications.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React.js (Basics)</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Personal Portfolio Website (this one)</p>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Selected for Full Stack Web Development Internship at Future Interns</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <p>
+          📧 Email:
+          <a href="mailto:pragyachaudhary07@gmail.com">
+            pragyachaudhary07@gmail.com
+          </a>
+        </p>
+
+        <p>
+          🔗
+          <a href="https://github.com/Pragyachaudhary07" target="_blank">
+            GitHub
+          </a>
+          |
+          <a href="https://www.linkedin.com/in/pragya-chaudhary-6ba071289/" target="_blank">
+            LinkedIn
+          </a>
+        </p>
+      </section>
+
+    </main>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
